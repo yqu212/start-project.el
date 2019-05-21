@@ -57,10 +57,11 @@
 	(candidates . my-projects-cookie-cutters)
 	(action . my-projects-make-project)))
 
+;;;###autoload
 (defun helm-start-project ()
   "My projects"
   (interactive)
   (helm :sources 'helm-source-my-projects
 	:buffer "*helm-projects*"))
 
-(provide 'helm-start-project)
+(provide 'start-project)
